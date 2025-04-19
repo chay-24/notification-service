@@ -36,10 +36,10 @@
             "notifications": [
                 {{range .notifications}}
                 {
-                    "app": "{{.App}}",
+                    "source": "{{.Source}}",
                     "title": "{{.Title}}",
                     "message": "{{.Message}}",
-                    "time": "{{.Time}}"
+                    "timetamp": "{{.Timestamp}}"
                 },
                 {{end}}
             ]
