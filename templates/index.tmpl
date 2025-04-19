@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #00FF00;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .json-output {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #00FF00;
+            font-size: 18px;
+            width: 90%;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Display JSON-like structure of notifications -->
+    <div class="json-output">
+        {
+            "notifications": [
+                {{range .notifications}}
+                {
+                    "app": "{{.App}}",
+                    "title": "{{.Title}}",
+                    "message": "{{.Message}}",
+                    "time": "{{.Time}}"
+                },
+                {{end}}
+            ]
+        }
+    </div>
+</body>
+</html>
