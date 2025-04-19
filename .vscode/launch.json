@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+      {
+          "name": "notification-service",
+          "type": "go",
+          "mode": "debug",
+          "showLog": true,
+          "showGlobalVariables": false,
+          "request": "launch",
+          "program": "${workspaceFolder}",
+          "envFile": "${workspaceFolder}/local.env",
+          "internalConsoleOptions": "openOnSessionStart"
+      }
+
+  ],
+  "compounds": []
+}

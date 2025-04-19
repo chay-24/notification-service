@@ -1,0 +1,4 @@
+local.env
+notifications.db
+__debug*
+notification-service
