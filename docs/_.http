@@ -1,0 +1,13 @@
+@baseurl=http://localhost:8089/api
+
+###
+### Send Notification.
+###
+POST {{baseurl}}/notifications
+Content-Type: application/json
+
+{
+  "source": "WhatsApp",
+  "title": "New Message",
+  "message": "I'm IronMan"
+}
